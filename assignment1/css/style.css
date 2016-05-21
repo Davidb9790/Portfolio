@@ -2,17 +2,17 @@
 body{
 
 	font-family: 'Georgia','Times', 'Times New Roman', 'serif', 'Courette'; 
+	/*background-image: url("assingment1/images/pattern.png");*/
 	width:960px;
-	margin-top: 150px;
-	background:"images/pattern.png";
 	color: grey;
 	line-height:25px;
-
+	overflow: auto;
+	margin-bottom: 80px;
+	position: relative;
 }
 header{
 	width: 100%;
 	background:white;
-	position: absolute;
 	top: -1;
 	left: -1;
 	/*height: 100px;*/
@@ -33,32 +33,33 @@ h1{
 
 
 #back{
-	height: 600px;
+	height: 450px;
 	width: 600px;
 	background-color: white;
-	margin-left: 125px;
-	position: absolute;
-
+	/*margin-left: 125px;*/
+	float:left;
 	}
 
 #contactme{
 	height: 500px;
 	width: 600px;
 	background-color: white;
+	float: left;
 	margin-left: 125px;
 }
 
 .profile{
 	float: left;
-		margin: 10px;
-		margin-top: 25px;
-		margin-left: 25px;
+	margin: 25px;
+	height: 200px; 
+	width: 200px;"
 
 		}
 
 .bio{
 padding-left: 10px;
 padding-right: 10px;
+/*width: 750px;*/
 	}
 #rightbar{
 	width: 90%;
@@ -91,23 +92,30 @@ padding-right: 10px;
 }
 
 h2{
-	background-color: white;
 	color: #4aaaa5;
-	float: right;
-	height: 75px;
+	/*float: right;*/
+	/*height: 75px;*/
 	width: 200px;
 	font-size: 16px;
-	margin-left: 150px;
-	padding-bottom: 30px;
-	padding-top:15; 
+	/*margin-left: 150px;*/
+	/*padding-bottom: 30px;*/
+	/*padding-top:15; */
 	
 	
 }
-#images{
-		width: 65px;
-		float: right;
-		text-align: center;
-		}
+#block {
+	background-color: white;
+	text-align: center;
+	float: right;
+	margin-left: inherit;
+	padding-bottom: 10px;
+	margin-top: 25px;
+}
+
+#block img{
+	height: 50px;
+	width: 50px;
+}
 
 h3{
 	background-color:#4aaaa5;
@@ -118,17 +126,26 @@ h3{
 	padding-top:25 ;
 	padding-bottom: 20px;
 	margin-left: 125px;
-	float: left;
-	
-	
+	float: left;	
 }
 
-h5{
-	padding-left: 20px;
+h4{
+	background-color:#4aaaa5;
+	color:white;
+	font-size: 24px;
+	width: 250px;
+	text-align: center;
+	padding-top:25 ;
+	padding-bottom: 20px;
+	margin-left: 125px;
+	float: left;
 }
+
+/*h5{
+	padding-left: 20px;
+}*/
 
 footer {
-	position: absolute;
 	border-top: 5px solid #4aaaa5;
 	bottom: 0;
 	left: 0;
@@ -138,7 +155,14 @@ footer {
     width: 100%;
     color: white;
     text-align: center;
- 	
+    position: absolute;
+    bottom: 0;
+}
+
+body::after{
+	content: '';
+	clear: both;
+	display: block;
 }
 
 #portfolio{
@@ -146,7 +170,8 @@ footer {
 	width: 450px;
 	background-color: white;
 	margin-left: 125px;
-	position: absolute;
+	float: left;
+	margin-top: 25px;
 
 }
 #message{
@@ -168,7 +193,6 @@ margin: 25;
 	width: 30%;
 	height: 30%;
 	display: inline;
-
 	float: left;
 	background-repeat: no-repeat;
 	margin: 25;	
@@ -178,7 +202,6 @@ margin: 25;
 	width: 30%;
 	height: 30%;
 	display: inline;
-	
 	float: left;
 	background-repeat: no-repeat;
 	margin: 25;	
@@ -188,7 +211,6 @@ margin: 25;
 	width: 30%;
 	height: 30%;
 	display: inline;
-	
 	float: left;
 	background-repeat: no-repeat;
 	margin: 25;	
@@ -198,12 +220,10 @@ margin: 25;
 	width: 30%;
 	height: 30%;
 	display: inline;
-	
 	float: left;
 	background-repeat: no-repeat;
 	margin: 25;	
 }
-
 .image-header{
 	position: relative;
 	background-color: lightgreen;
@@ -212,23 +232,309 @@ margin: 25;
 	vertical-align: baseline;
 	opacity: .9;
 	height: 50px;
-
 }
-
 form{
-	color: light grey;
+	color: grey;
 	margin-left: 15px;
 }
 .submit{
 	margin left: 15px;
 
 }
-@media screen and (max-width: 980px){
+
+@media screen and (max-width:980px){
+	/*INDEX MEDIA CSS*/
+	#menu{
+		float: left;
+		height: 20%;
+	}
+	#back{
+		width: 50%;
+		height: 50%;
+		margin-left: 125px;
+		/*background-color: ;*/
+		margin-top: 25px;
+		height: inherit;
+		margin-bottom: inherit;
+
+	}
+	#block{
+    background-color: white;
+    text-align: center;
+    float: left;
+    margin-left: inherit;
+    padding-bottom: 10px;
+
+		/*float: bottom;*/
+	}
+	.profile{
+		width: 85%;
+	}
+	.bio{
+		font-size: 24px;
+		background-color: white;
+		line-height: 2;
+	}
+	footer{
+		margin-top: 25px;
+		
+	}
+	/*CONTACT ME SITE CSS*/
+	#contactme{
+		width: 45%;
+		float: left;
+		/*margin-left:125px;*/
+		margin-top: 25px;
+		margin-bottom: inherit;
+	}
+	.message{
+		width:50%;
+	}
+
+	#block{
+	background-color: white;
+    text-align: center;
+    float: right;
+    height: inherit;
+    padding-bottom: 10px;
+    margin-right: 125px;
+    margin-top: 25px;
+
+	}
+	.input{
+		width: 95%;
+	}
+	/*CSS PORTFOLIO 980*/
+	#portfolio{
+		width: 50%;
+		background-color: white;
+		height: initial;
+	}
+
+	.image-header{
+		width: 85%;
+	}
+	.tile1{
+		float: left;
+		width: 75%;
+	}
+	.tile2{
+		float: left;
+		width: 50%;
+	}
+
+	.tile3{
+		float: left;
+		width: 50%;
+	}
+	.tile4{
+		float: left;
+		width: 50%;
+	}
+
 
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width:768px){
+		body{
+			width: inherit;
+		}
+		#menu{
+			float: right;
+			margin: 0;
+			/*height: 20%;*/
+		}
+		h4{
+			margin-left: 12px;
+			float: left;
+		}
+		#back{
+			width: 85%;
+			height: inherit;
+			margin-left: auto;
+			/*margin-top: 125px;*/
+		}
+		.profile{
+			width: 50%;
+			height: 50%;
+		}
+		#block{
+			margin-top: 25px;
+			width: 85%;
+			background-color: white;
+    		float: right;
+    		padding-bottom: 10px;
+    		/*text-align: center;*/
+    		/*margin-left: 125px;*/
+			/*width: 95%;*/
+			/*position: absolute;*/
+		}
+		.bio{
+			width: 95%;
+		}
+		footer{
+		bottom: 0;
+		bottom: -85px;
+		}
+
+		/*CONTACT ME 768  */
+		
+		#contactme{
+			width: 85%;
+		    height: inherit;
+		    margin-top: 25px;
+		    margin-left: auto;
+		}
+		form{
+			background-color: white;
+			/*margin-left: 25px;*/
+			/*padding-right: 25px;*/
+			/*margin-right: auto;*/
+
+		}
+
+		.submit{}
+
+		/*CSS PORTFOLIO 768px*/
+		#block{
+
+		}
+		#portfolio{
+			width: 500px;
+			margin:auto;
+			height: initial;
+			margin-top: 25px;
+		}
+		.image-header{
+		width: 85%;
+		margin-top: 150px;
+		}
+		.tile1{
+			float: left;
+			width: 80%;
+			height: 200px;
+			background-size: 500px 400px;
+		}
+		.tile2{
+			float: left;
+			width: 80%;
+			height: 200px;
+			background-size: 500px 400px;
+		}
+		.tile3{
+			float: left;
+			width: 80%;
+			height: 200px;
+			background-size: 500px 400px;
+		}
+		.tile4{
+			float: left;
+			width: 80%;
+			height: 200px;
+			background-size: 500px 400px;
+		}
+	
+
+	}
+/*.tile1{
+width: 75%;
+}*/
+header{
+	height: 100px;
 
 }
+h3{
+	margin: 0;
+}
+menu{
+	height: inherit;
+}
+}
+
+
 @media screen and (max-width: 640px){
+	#back{
+		width: 90%;
+		margin: 0;
+		height: inherit;
+		/*height: 50%;*/
+		/*margin-top: 125px;*/
+		/*margin-left: 125px;*/
+		/*background-color: ;*/
+	}
+	header{
+		width:875px;
+	}
+	h2{
+		text-align: center;
+	}
+	#menu{
+		float: left;
+		width: 55%
+
+	}
+	#menu li{
+		font-size: 20px;
+		margin: 15px;
+	}
+	h3{
+		margin-left: 1px;
+		font-size: 36px;
+		width: inherit;	
+		margin-top: auto;
+
+	}
+	.profile{
+		width: 90%;
+		height:85%; 
+	}
+	/*.bio{
+		width: 90%;
+	}*/
+	#block{
+		float: left;
+		width: 90%;
+		margin:auto;
+		margin-top: 25px;
+	}
+	.portfolio{
+		width: 150%;
+	}
+	.image-header{
+		width: 85%;
+			}
+	.clearfix{
+	clear: both;
+	}
+	/*CSS FOR CONTACT ME */
+	/*body{
+		width: inherit;
+	}*/
+	#contactme{
+		width: 95%;
+	}
+	h4{
+	margin-left: 1px;
+    font-size: 36px;
+    width: inherit;
+    margin-top: auto;
+	}
+	.tile1{
+		float: left;
+		width: 100%;
+	}
+	.tile2{
+		float: left;
+		width: 100%;
+	}
+
+	.tile3{
+		float: left;
+		width: 100%;
+	}
+	.tile4{
+		float: left;
+		width: 100%;
+	}
+
 
 }
